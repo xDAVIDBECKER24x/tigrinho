@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tigrinho 🐯</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+
+</head>
+
+<body>
+
+    <div class="parent">
+        <div class="animate__animated animate__backInLeft div1">
+            <div class='rules'>
+                <ol>
+                    <li>Selecione o valor da fichas a serem apostadas no canto inferior esquerdo</li>
+                    <li>Selecione as casas a serem apostadas no tabuleiro</li>
+                    <li>Aperte em "spin" para rodar a roleta </li>
+                    <li>AGORA É SO ESPERAR O LUCRO !! LETS GO!! 🤑🤑🤑 </li>
+                </ol>
+
+            </div>
+
+        </div>
+        <div class="div2">
+            <div id="tigrinho">
+                <img class="animate__animated animate__pulse animate__delay-1s animate__infinite animate__slower" src="tigrinho.png">
+            </div>
+        </div>
+
+
+    </div>
+    <div class="animate__animated animate__backInLeft container">
+        <div class="animate__animated animate__heartBeat animate__delay-5s animate__infinite animate__slower sadw">
+            <button onclick=depositar() id="deposit" class="deposit">
+            Depositar R$500
+        </button></div>
+    </div>
+
+    <script src="./script.js"></script>
+    <script>
+        const audio = new Audio("musica.mp3");
+        const buttons = document.querySelectorAll("button");
+
+        buttons.forEach(button => {
+            button.addEventListener("click", () => {
+                audio.play();
+            });
+        });
+    </script>
+
+</body>
+
+
+</html>
